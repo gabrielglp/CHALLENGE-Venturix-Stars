@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: slideY 2s;
 }
 
 .card {
@@ -61,16 +62,20 @@
     align-items: center;
     justify-content: center;
     margin-top: 2.5rem;
+    transition: 0.8s;
+    transform: translate(0) scale(1.3rem);
 }
 
 .btn-div div {
     transform: translateY(20%);
 }
 
-.btn-div:hover {
+.btn-div:hover,
+.btn-div:focus {
     background-color: var(--orange);
     color: var(--white);
     cursor: pointer;
+    transform: translateX(5px) scale(1);
 }
 
 .active {
@@ -93,12 +98,40 @@
     padding: 1.31rem;
     border-radius: 4rem;
     letter-spacing: 0.1rem;
+    transition: 0.8s;
+    transition: transform 0.8s;
 }
 
-.submit:hover {
+.submit:hover,
+.submit:focus {
     background-color: var(--white);
     color: var(--orange);
+    cursor: pointer;
     font-weight: 700;
+    transform: scale(1.05);
+}
+
+.tooltip {
+    color: var(--white);
+    position: relative;
+    top: 20px;
+    padding: .1rem;
+    background: rgb(15, 15, 15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 4rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.btn-submit:hover .tooltip {
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
 }
 
 .card-2 {
@@ -136,4 +169,14 @@
 
 .ocult {
     display: none;
+}
+
+@keyframes slideY {
+    from {
+        transform: translateY(90px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
 }
