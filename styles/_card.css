@@ -1,0 +1,139 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--dark-blue);
+    width: 88%;
+    max-width: 40rem;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+}
+
+.star {
+    background-color: var(--medium-grey);
+    width: 4rem;
+    height: 4rem;
+    padding: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star img {
+    width: 1.4rem;
+}
+
+.titulo-h1 {
+    font-size: 2.4rem;
+    color: var(--white);
+    margin-top: 1.9rem;
+}
+
+.texto {
+    color: var(--light-grey);
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    margin-top: 1.2rem;
+}
+
+.all-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-div {
+    color: var(--light-grey);
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: var(--medium-grey);
+    width: 4.1rem;
+    height: 4.1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.btn-div div {
+    transform: translateY(20%);
+}
+
+.btn-div:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(--light-grey);
+}
+
+.active div {
+    color: var(--white);
+}
+
+.submit {
+    background-color: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-top: 2.9rem;
+    font-size: 1.5rem;
+    padding: 1.31rem;
+    border-radius: 4rem;
+    letter-spacing: 0.1rem;
+}
+
+.submit:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    font-weight: 700;
+}
+
+.card-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-2 img {
+    width: 14rem;
+    margin-top: 1rem;
+}
+
+.result {
+    background-color: var(--medium-grey);
+    padding: .8rem 1.4rem;
+    border-radius: 2rem;
+    margin-top: 2.4rem;
+    margin-bottom: 0.6rem;
+}
+
+.result div {
+    color: var(--orange);
+    font-size: 1.4rem;
+}
+
+.texto-p {
+    color: var(--light-grey);
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 2.2rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.ocult {
+    display: none;
+}
