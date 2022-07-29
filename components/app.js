@@ -1,4 +1,7 @@
 const submit = document.querySelector('.submit')
+// No javascript é preferencial o uso do camelCase
+// w3schools.com/js/js_conventions.asp#:~:text=camelCase%20is%20used%20by%20JavaScript,start%20names%20with%20a%20%24%20sign.
+
 const card_1 = document.querySelector('.card-1')
 const card_2 = document.querySelector('.card-2')
 const btn_div = document.querySelectorAll('.btn-div')

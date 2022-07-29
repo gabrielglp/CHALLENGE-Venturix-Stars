@@ -11,4 +11,8 @@ html {
 body {
     font-family: 'Overpass', sans-serif;
     background-color: var(--very-dark-blue);
+    /* o overflow hidden garante que não será criado
+        scroll na transition do card 
+    */
+    overflow: hidden;
 }

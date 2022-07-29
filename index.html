@@ -26,21 +26,50 @@
           <div class="star">
             <img src="images/icon-star.svg" alt="Yellow Star" />
           </div>
+          <!-- 
+            A fim de manter o código mais semântico, uma boa prática é utilizar alguma 
+            metodologia de nomenclatura de classes.
+
+            Nesse caso, os componentes filhos poderiam ser nomeados da seguinte forma:
+          -->
+          <!-- <h1 class="card-title">How did we do?</h1> -->
           <h1 class="titulo-h1">How did we do?</h1>
+          <!-- <div class="card-content"> -->
           <div class="texto">
+          <!-- <p class="card-text"> -->
             <p class="texto">
               Please let us know how we did with your support request. All
               feedback is appreciated to help us improve our offering!
             </p>
+            <!-- <div class="card-rate"> -->
             <div class="all-btn">
+              <!-- Aqui, você adicionou o width e o height fixo (responsáveis nesse caso por
+                criarem um circulo perfeito) na .btn-div, e dentro dela há outra div.
+               Por isso o circulo não ficou perfeito.
+              -->
               <div class="btn-div"><div>1</div></div>
               <div class="btn-div"><div>2</div></div>
+              <!-- Acredito que pra esse componente o melhor seria vir 
+                se nenhum valor pré-definido.
+                Isso poderia ter sido alcançado de uma maneira mais fácil usando
+                os radio buttons
+              
+                https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types
+              -->
               <div class="btn-div active"><div>3</div></div>
               <div class="btn-div"><div>4</div></div>
               <div class="btn-div"><div>5</div></div>
             </div>
             <div class="btn-submit">
               <div class="submit">submit</div>
+              <!-- 
+                O uso de tooltips é legal quando você tem um elemento em tela
+                que o label em si, mesmo com um ícone, ainda não diz ao usuário 
+                qual sua finalidade.
+
+                Acredito que nesse caso o button de submit já dê a informação que se trata 
+                de um formulário a ser submetido.
+              -->
               <span class="tooltip">Click SUBMIT. 👆</span>
             </div>
           </div>
