@@ -20,49 +20,52 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    <main class="container">
-      <div class="card">
-        <div class="card-1">
-          <div class="star">
+    <main class="Container">
+      <div class="Card">
+        <div class="Card-1">
+          <div class="Star">
             <img src="images/icon-star.svg" alt="Yellow Star" />
           </div>
-          <h1 class="titulo-h1">How did we do?</h1>
-          <div class="texto">
-            <p class="texto">
-              Please let us know how we did with your support request. All
-              feedback is appreciated to help us improve our offering!
-            </p>
-            <div class="all-btn">
-              <div class="btn-div"><div>1</div></div>
-              <div class="btn-div"><div>2</div></div>
-              <div class="btn-div active"><div>3</div></div>
-              <div class="btn-div"><div>4</div></div>
-              <div class="btn-div"><div>5</div></div>
+          <h1 class="CardTitle">How did we do?</h1>
+          <p class="CardText">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <form>
+            <div class="CardRate">
+              <input type="radio" name="BtnInput" id="BtnInput1" value="1" />
+              <label for="BtnInput1">1</label>
+              <input type="radio" name="BtnInput" id="BtnInput2" value="2" />
+              <label for="BtnInput2">2</label>
+              <input type="radio" name="BtnInput" id="BtnInput3" value="3" />
+              <label for="BtnInput3">3</label>
+              <input type="radio" name="BtnInput" id="BtnInput4" value="4" />
+              <label for="BtnInput4">4</label>
+              <input type="radio" name="BtnInput" id="BtnInput5" value="5" />
+              <label for="BtnInput5">5</label>
             </div>
-            <div class="btn-submit">
-              <div class="submit">submit</div>
-              <span class="tooltip">Click SUBMIT. 👆</span>
+            <div class="BtnSubmit">
+              <button type="submit" class="submit" disabled>
+                Submit
+              </button>
             </div>
-          </div>
+          </form>
         </div>
-        <div class="card-2 ocult">
+        <div class="Card-2 ocult">
           <img src="images/illustration-thank-you.svg" alt="Thank you" />
           <div class="result">
             <div>
-              You selected
-              <span class="score">4</span>
-              out of 5
+              <span class="score"></span>
             </div>
           </div>
-          <h2 class="titulo-h1">Thank you!</h2>
-          <div class="texto-p">
+          <h2 class="CardTitle">Thank you!</h2>
+          <div class="TextCard2">
             We appreciate you taking the time to give a rating. If you ever need
             more support, don't hesitate to get in touch!
           </div>
         </div>
       </div>
     </main>
-
     <script src="components/app.js"></script>
   </body>
 </html>
